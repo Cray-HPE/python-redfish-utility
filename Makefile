@@ -5,7 +5,7 @@ BUILD_METADATA ?= 1~development~$(shell git rev-parse --short HEAD)
 
 NAME:=ilorest
 VERSION := $(shell awk '/Version/{print $$NF; exit}' ${SRCROOT}/docs/slate/source/includes/_changelog.md)
-RELEASE:=1
+RELEASE:=2
 SPHINXBUILD:=$(BUILD_DIR)/pylib/Sphinx-1.0.7/sphinx-build.py
 BLOFLY := /net
 #CREATE_CHROOT := /net/blofly.us.rdlabs.hpecorp.net/data/blofly/iss-linux-sdk/chrootbuilder/create_chroot.sh
