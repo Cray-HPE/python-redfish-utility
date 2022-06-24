@@ -4,7 +4,7 @@ CHROOT_LOCAL_DIR:= $(shell pwd)
 
 NAME:=ilorest
 VERSION := $(shell awk '/Version/{print $$NF; exit}' ${SRCROOT}/docs/slate/source/includes/_changelog.md)
-RELEASE:=2
+RELEASE:=1
 SPHINXBUILD:=$(BUILD_DIR)/pylib/Sphinx-1.0.7/sphinx-build.py
 BLOFLY := /net
 #CREATE_CHROOT := /net/blofly.us.rdlabs.hpecorp.net/data/blofly/iss-linux-sdk/chrootbuilder/create_chroot.sh
